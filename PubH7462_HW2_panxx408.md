@@ -61,12 +61,12 @@ brfss_clean %>%
   tab_header("States were Observed at 6 Locations in 2004")
 ```
 
-<div id="zmjxyiredr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="qmqtgdablq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zmjxyiredr .gt_table {
+#qmqtgdablq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -91,7 +91,7 @@ brfss_clean %>%
   border-left-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_heading {
+#qmqtgdablq .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -103,7 +103,7 @@ brfss_clean %>%
   border-right-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_title {
+#qmqtgdablq .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -113,7 +113,7 @@ brfss_clean %>%
   border-bottom-width: 0;
 }
 
-#zmjxyiredr .gt_subtitle {
+#qmqtgdablq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -123,13 +123,13 @@ brfss_clean %>%
   border-top-width: 0;
 }
 
-#zmjxyiredr .gt_bottom_border {
+#qmqtgdablq .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_col_headings {
+#qmqtgdablq .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -144,7 +144,7 @@ brfss_clean %>%
   border-right-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_col_heading {
+#qmqtgdablq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -164,7 +164,7 @@ brfss_clean %>%
   overflow-x: hidden;
 }
 
-#zmjxyiredr .gt_column_spanner_outer {
+#qmqtgdablq .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -176,15 +176,15 @@ brfss_clean %>%
   padding-right: 4px;
 }
 
-#zmjxyiredr .gt_column_spanner_outer:first-child {
+#qmqtgdablq .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#zmjxyiredr .gt_column_spanner_outer:last-child {
+#qmqtgdablq .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#zmjxyiredr .gt_column_spanner {
+#qmqtgdablq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -196,7 +196,7 @@ brfss_clean %>%
   width: 100%;
 }
 
-#zmjxyiredr .gt_group_heading {
+#qmqtgdablq .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -218,7 +218,7 @@ brfss_clean %>%
   vertical-align: middle;
 }
 
-#zmjxyiredr .gt_empty_group_heading {
+#qmqtgdablq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -233,15 +233,15 @@ brfss_clean %>%
   vertical-align: middle;
 }
 
-#zmjxyiredr .gt_from_md > :first-child {
+#qmqtgdablq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zmjxyiredr .gt_from_md > :last-child {
+#qmqtgdablq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zmjxyiredr .gt_row {
+#qmqtgdablq .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -260,7 +260,7 @@ brfss_clean %>%
   overflow-x: hidden;
 }
 
-#zmjxyiredr .gt_stub {
+#qmqtgdablq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -272,7 +272,7 @@ brfss_clean %>%
   padding-left: 12px;
 }
 
-#zmjxyiredr .gt_summary_row {
+#qmqtgdablq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -282,7 +282,7 @@ brfss_clean %>%
   padding-right: 5px;
 }
 
-#zmjxyiredr .gt_first_summary_row {
+#qmqtgdablq .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -292,7 +292,7 @@ brfss_clean %>%
   border-top-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_grand_summary_row {
+#qmqtgdablq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -302,7 +302,7 @@ brfss_clean %>%
   padding-right: 5px;
 }
 
-#zmjxyiredr .gt_first_grand_summary_row {
+#qmqtgdablq .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -312,11 +312,11 @@ brfss_clean %>%
   border-top-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_striped {
+#qmqtgdablq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#zmjxyiredr .gt_table_body {
+#qmqtgdablq .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -325,7 +325,7 @@ brfss_clean %>%
   border-bottom-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_footnotes {
+#qmqtgdablq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -339,13 +339,13 @@ brfss_clean %>%
   border-right-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_footnote {
+#qmqtgdablq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#zmjxyiredr .gt_sourcenotes {
+#qmqtgdablq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -359,41 +359,41 @@ brfss_clean %>%
   border-right-color: #D3D3D3;
 }
 
-#zmjxyiredr .gt_sourcenote {
+#qmqtgdablq .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#zmjxyiredr .gt_left {
+#qmqtgdablq .gt_left {
   text-align: left;
 }
 
-#zmjxyiredr .gt_center {
+#qmqtgdablq .gt_center {
   text-align: center;
 }
 
-#zmjxyiredr .gt_right {
+#qmqtgdablq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zmjxyiredr .gt_font_normal {
+#qmqtgdablq .gt_font_normal {
   font-weight: normal;
 }
 
-#zmjxyiredr .gt_font_bold {
+#qmqtgdablq .gt_font_bold {
   font-weight: bold;
 }
 
-#zmjxyiredr .gt_font_italic {
+#qmqtgdablq .gt_font_italic {
   font-style: italic;
 }
 
-#zmjxyiredr .gt_super {
+#qmqtgdablq .gt_super {
   font-size: 65%;
 }
 
-#zmjxyiredr .gt_footnote_marks {
+#qmqtgdablq .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -473,12 +473,12 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   tab_header("Response Proportion and Sample Size in MN on 2002, 2006 and 2010") 
 ```
 
-<div id="noqghtqkpo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="sgjsokejlu" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#noqghtqkpo .gt_table {
+#sgjsokejlu .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -503,7 +503,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-left-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_heading {
+#sgjsokejlu .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -515,7 +515,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-right-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_title {
+#sgjsokejlu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -525,7 +525,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-bottom-width: 0;
 }
 
-#noqghtqkpo .gt_subtitle {
+#sgjsokejlu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -535,13 +535,13 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-top-width: 0;
 }
 
-#noqghtqkpo .gt_bottom_border {
+#sgjsokejlu .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_col_headings {
+#sgjsokejlu .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -556,7 +556,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-right-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_col_heading {
+#sgjsokejlu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -576,7 +576,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   overflow-x: hidden;
 }
 
-#noqghtqkpo .gt_column_spanner_outer {
+#sgjsokejlu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -588,15 +588,15 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   padding-right: 4px;
 }
 
-#noqghtqkpo .gt_column_spanner_outer:first-child {
+#sgjsokejlu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#noqghtqkpo .gt_column_spanner_outer:last-child {
+#sgjsokejlu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#noqghtqkpo .gt_column_spanner {
+#sgjsokejlu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -608,7 +608,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   width: 100%;
 }
 
-#noqghtqkpo .gt_group_heading {
+#sgjsokejlu .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -630,7 +630,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   vertical-align: middle;
 }
 
-#noqghtqkpo .gt_empty_group_heading {
+#sgjsokejlu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -645,15 +645,15 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   vertical-align: middle;
 }
 
-#noqghtqkpo .gt_from_md > :first-child {
+#sgjsokejlu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#noqghtqkpo .gt_from_md > :last-child {
+#sgjsokejlu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#noqghtqkpo .gt_row {
+#sgjsokejlu .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -672,7 +672,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   overflow-x: hidden;
 }
 
-#noqghtqkpo .gt_stub {
+#sgjsokejlu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -684,7 +684,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   padding-left: 12px;
 }
 
-#noqghtqkpo .gt_summary_row {
+#sgjsokejlu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -694,7 +694,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   padding-right: 5px;
 }
 
-#noqghtqkpo .gt_first_summary_row {
+#sgjsokejlu .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -704,7 +704,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-top-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_grand_summary_row {
+#sgjsokejlu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -714,7 +714,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   padding-right: 5px;
 }
 
-#noqghtqkpo .gt_first_grand_summary_row {
+#sgjsokejlu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -724,11 +724,11 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-top-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_striped {
+#sgjsokejlu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#noqghtqkpo .gt_table_body {
+#sgjsokejlu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -737,7 +737,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-bottom-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_footnotes {
+#sgjsokejlu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -751,13 +751,13 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-right-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_footnote {
+#sgjsokejlu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#noqghtqkpo .gt_sourcenotes {
+#sgjsokejlu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -771,41 +771,41 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
   border-right-color: #D3D3D3;
 }
 
-#noqghtqkpo .gt_sourcenote {
+#sgjsokejlu .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#noqghtqkpo .gt_left {
+#sgjsokejlu .gt_left {
   text-align: left;
 }
 
-#noqghtqkpo .gt_center {
+#sgjsokejlu .gt_center {
   text-align: center;
 }
 
-#noqghtqkpo .gt_right {
+#sgjsokejlu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#noqghtqkpo .gt_font_normal {
+#sgjsokejlu .gt_font_normal {
   font-weight: normal;
 }
 
-#noqghtqkpo .gt_font_bold {
+#sgjsokejlu .gt_font_bold {
   font-weight: bold;
 }
 
-#noqghtqkpo .gt_font_italic {
+#sgjsokejlu .gt_font_italic {
   font-style: italic;
 }
 
-#noqghtqkpo .gt_super {
+#sgjsokejlu .gt_super {
   font-size: 65%;
 }
 
-#noqghtqkpo .gt_footnote_marks {
+#sgjsokejlu .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -891,7 +891,7 @@ brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
 **The response proportions in there years do not have obvious variance,
 while the sample size is increase from 2002 to 2010.**
 
-### 3.3.4 Create a ggplot that communicates the results/trends from the table above and stands on its own. \*\*
+### 3.3.4 Create a ggplot that communicates the results/trends from the table above and stands on its own.
 
 ``` r
 brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
