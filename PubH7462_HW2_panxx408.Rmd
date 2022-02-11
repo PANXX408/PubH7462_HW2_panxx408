@@ -4,7 +4,159 @@ author: "Mingming Pan"
 date: "2/9/2022"
 output: github_document
 ---
-Problem3.1 Data Exploration & Cleaning
-```{r}
 
+```{r setup, include=FALSE}
+library(tidyverse)
+library(forcats)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+library(DataExplorer)
+library(gt)
+#Working directory for .RMD
+knitr::opts_knit$set(echo = TRUE,
+                     root.dir = rprojroot::find_rstudio_root_file())
+
+#Controlling figure output in markdown
+knitr::opts_chunk$set(
+#  fig.height =   
+  fig.width = 6,
+#  fig.asp = .5,
+  out.width = "90%",
+#  out.height = 
+ fig.align  = "center",
+  cache = FALSE,
+  eval  = TRUE,
+  echo  = TRUE
+)
+
+#My Colours (from viridis)
+my_purple <- "#440154FF"
+my_yellow <- "#FDE725FF"
+
+#Set Theme for ggplot2
+theme_set(theme_bw() + theme(plot.title = element_text(hjust = 0.5), legend.position = "bottom"))
+
+#Set Scientific notation output and decimal places for knitr
+options(scipen = 999)
+options(digits = 4)
 ```
+
+
+```{r, message = FALSE}
+#Read data
+brfss_df <- read_csv("./data/brfss_smart_2010.csv")
+```
+## Problem3.1 Data Exploration & Cleaning
+```{r}
+#Data Exploration
+plot_str(brfss_df)
+plot_intro(brfss_df)
+```
+
+```{r, warning=FALSE}
+#Date Cleaning
+brfss_clean <- brfss_df %>% separate(col = Locationdesc, into = c("State", "2", "County"),
+                                     sep = " ") %>%
+  filter(Topic == "Overall Health") %>%
+  select(Year, State, County, Response, Sample_Size, Data_value) %>%
+  rename(Response_Prop = Data_value) %>%
+  mutate(State = as.factor(State)) %>%
+  mutate(County = as.factor(County))
+```
+
+
+## 3.2 Data Description
++ There are `r ncol(brfss_clean)` variables and `r nrow(brfss_clean)` observations.
++ Each observation represents details of one of the response of a county at a specific year.
++ Year, State, County, Response, Response Proportion and sample size are the six variables.
++ Year describes the year taking the questionnaire; State and County describe the locations; Response describes the type of responses and response proportion indicates the proportion of corresponding response; and sample size describes the sample size of corresponding response. 
++ The number of countys taking the questionnaire varies from year to year. 
+ 
+ 
+## 3.3 Do Data Science
+
+
+### 3.3.1In the year 2004, which states were observed at 6 locations?
+```{r}
+brfss_clean %>%
+  filter(Year == "2004") %>%
+  select(State, County) %>%
+  distinct() %>%
+  group_by(State) %>%
+  summarise(Locations = n()) %>%
+  filter(Locations == 6) %>%
+  gt() %>%
+  cols_label(Locations = "Number of Locations") %>%
+  tab_header("States were Observed at 6 Locations in 2004")
+```
+**CO, NM, SC, TX, UT and VT were observed at 6 locations in 2004.**
+
+
+### 3.3.2 Make a spaghetti plot that shows the number of observed locations in each state from 2002 to 2010. Which state has the highest mean number of locations over this period?
+```{r, message=FALSE}
+brfss_clean %>% filter(Year > 2001 & Year < 2011) %>%
+  select(Year, State, County) %>%
+  distinct() %>% 
+  group_by(State, Year) %>%
+  summarise(Location = n()) %>% 
+  ungroup(Year, State) %>%
+  mutate(State = fct_reorder(State, Location, mean, .desc = TRUE)) %>%
+  ggplot() +
+  geom_line(aes(x = Year, y = Location, group = State, color = State)) +
+  labs(
+    x = "Year",
+    y = "Number of Locations",
+    title = "Mean of Locations by State from 2002 - 2010"
+  )
+```
+
+**NJ is the state which has the highest mean number of locations over the period.**
+
+
+### 3.3.3 Make a table showing, for the years 2002, 2006, and 2010, the mean and standard deviation of sample size and proportion of Excellent, Good, and Poor responses across locations in MN.
+```{r, message=FALSE}
+brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
+                       State == "MN",
+                       Response %in% c("Excellent", "Good", "Poor")) %>%
+  group_by(Response, Year) %>%
+  summarise(across(c(Sample_Size, Response_Prop), 
+                   list(mean = mean,
+                        sd = sd),
+                   na.rm = FALSE,
+                   .names = "{.col}.{.fn}")) %>%
+    gt() %>%
+  tab_header("Response Proportion and Sample Size in MN on 2002, 2006 and 2010") 
+```
+
+**The response proportions in there years do not have obvious variance, while the sample size is increase from 2002 to 2010.**
+
+
+### 3.3.4 Create a ggplot that communicates the results/trends from the table above and stands on its own. **
+```{r, message=FALSE, warning=FALSE}
+brfss_clean %>% filter(Year %in% c("2002", "2006", "2010"),
+                       State == "MN",
+                       Response %in% c("Excellent", "Good", "Poor")) %>%
+  group_by(Response, Year) %>%
+  summarise(across(c(Sample_Size, Response_Prop), 
+                   list(mean = mean,
+                        sd = sd),
+                   na.rm = FALSE,
+                   .names = "{.col}.{.fn}")) %>%
+  pivot_longer(cols = c(Sample_Size.mean, Sample_Size.sd, Response_Prop.mean, Response_Prop.sd),
+               names_to = "Stat",
+               values_to = "Value") %>%
+  ggplot(aes(x = Year, y = Value, group = Response, color = Response)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(~Stat) +
+  labs(x = "Value",
+       y = "Statistics",
+       title = "Response Proportion and Sample Size in MN on 2002, 2006 and 2010")
+```
+
+
+
+
+
